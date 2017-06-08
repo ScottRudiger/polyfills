@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Installing dependencies...') {
             steps {
-                sh 'yarn install'
+                sh 'npm install'
             }
         }
 
         stage('Uploading to CDN...') {
             steps {
-              sh 'yarn run upload'
+              sh 'npm run upload'
             }
         }
     }
